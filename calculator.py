@@ -11,3 +11,19 @@ def read_number(prompt):
             return float(input(prompt))
         except ValueError:
             print("Please enter a number, for example 12 or 3.5.")
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    # Check for zero explicitly instead of letting Python raise an error
+    if b == 0:
+        return "Cannot divide by zero."
+    return a / b
+
